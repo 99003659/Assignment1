@@ -46,7 +46,7 @@ void *consumer(void *cno)
     }
 }
 
-int main()
+int main1()
 {   
 
     pthread_t pro[7],con[7];
