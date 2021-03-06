@@ -75,7 +75,7 @@ int push(data)
     else
     {
         //printf("couldn't insert data as the stack is full\n");
-        printf("sorry buddy, this stack is full...try somewhere else \n");
+        printf("The stack is full \n");
     }
 }
 
