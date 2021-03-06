@@ -2,7 +2,7 @@
 #include <semaphore.h>
 #include <stdlib.h>
 #include <pthread.h>
-#define MAx 7
+#define MAX 7
 
 sem_t empty;
 sem_t full;
@@ -51,9 +51,10 @@ void insert(int item)
             cir_queue[rear] = item ;
             //printf("Element Produced : %d\n",item);
         }
+        printf("Element Produced : %d\n",item);
     }
-    printf("Element Produced : %d\n",item);
-}
+    
+
 
 void delete()
 {
@@ -105,5 +106,4 @@ int main()
     sem_destroy(&full);
 return 0;
 }
-
 
